@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap">
+
+<style>
+   body,h1,h5 {font-family: 'Open Sans Condensed', sans-serif;}
+   body, html {height: 100%}
+
+   .bgimg {background-image: url('https://us.123rf.com/450wm/sathaporn/sathaporn1611/sathaporn161100008/69441356-seamless-white-concrete-wall-pattern.jpg?ver=6');
+   min-height: 100%; background-position: center; background-size: cover;}
+
+   * {box-sizing: border-box}
+   .mySlides {display: none}
+   img {vertical-align: middle;}
+   @-webkit-keyframes fade {from {opacity: .4} to {opacity: 1}}
+   @keyframes fade {from {opacity: .4} to {opacity: 1}}
+
+</style>
+</head>
+
+<body>
+
+<link rel="shortcut icon" href="https://www.loftgym.com/wp-content/uploads/2018/11/logo.png" type="blacklogo.png"/>
+
+  <div class="topnav">
+      <br>
+      <img src="blacklogo.png" width="700" height="70">
+      <a href="classes.html"> <p><button class="button black">Classes</button></p> </a>
+      <a href="pricing.html"> <p><button class="button black">Prices</button></p> </a>
+      <a href="gallery.html"> <p><button class="button black">Gallery</button></p> </a>
+      <a href="about.html"> <p><button class="button black">About Us</button></p> </a>
+      <a href="contact.html"> <p><button class="button black">Contact Information</button></p> </a>
+  </div>
+
+  <div class="slideshow-container">
+  <div class="mySlides fade">
+  <img src="mainslide3.jpg" style="width:100%">
+ </div>
+  <div class="mySlides fade">
+  <img src="mainslide1.jpg" style="width:100%">
+ </div>
+  <div class="mySlides fade">
+  <img src="mainslide4.jpg" style="width:100%">
+ </div>
+  <div class="mySlides fade">
+  <img src="mainslide2.jpg" style="width:100%">
+ </div>
+
+ <a class="prev" onclick="plusSlides(-1)"> &#10096;</a>
+ <a class="next" onclick="plusSlides(1)"> &#10097;</a>
+ </div>
+
+ <div style="text-align:center">
+ <span class="dot" onclick="currentSlide(1)"></span>
+ <span class="dot" onclick="currentSlide(2)"></span>
+ <span class="dot" onclick="currentSlide(3)"></span>
+ <span class="dot" onclick="currentSlide(4)"></span>
+ </div>
+
+ <script>
+   var slideIndex = 1; showSlides(slideIndex);
+   function plusSlides(n) {showSlides(slideIndex += n);}
+   function currentSlide(n) {showSlides(slideIndex = n);}
+   function showSlides(n) {var i; var slides = document.getElementsByClassName("mySlides"); var dots = document.getElementsByClassName("dot");
+   if (n > slides.length) {slideIndex = 1} if (n < 1) {slideIndex = slides.length}
+   for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
+   for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" active", "");}
+   slides[slideIndex-1].style.display = "block"; dots[slideIndex-1].className += " active";}
+ </script>
+
+    <br><br>
+  <h1 class="center"> <b>Why The Loft Gym?</b></h1>
+  <center>
+    <img src="reasons.png" width=80% height="650">
+    <br><br>
+
+  <div class="display-bottombar center text-black">
+    <p class="large tborder"> <font size="+2.5"> <br> A 24/7 open gym only for members! <br> </p>
+    <p class="large "> <font size="+2"> 141 Middle Road, GSM Building <br> Singapore 188976 <br> Call us @ +65 9247 7460</p>
+    <a href="https://www.google.com/maps/dir//141+Middle+Rd,+GSM+Building,+Singapore+188976/@1.2994702,103.850206,17z/data=!4m15!1m6!3m5!1s0x31da19bb3d92a31b:0xd725e0a4a17bb90a!2sGSM+Building!8m2!3d1.2994702!4d103.8523947!4m7!1m0!1m5!1m1!1s0x31da19bb3d92a31b:0xd725e0a4a17bb90a!2m2!1d103.8523947!2d1.2994702">
+    <img src="map.png" width="400" height="300"></a>
+    <center><a href="contact.html"> <p><button class="button black">Click Here to Contact Us!</button></p></a></center>
+  </div>
+
+
+
+</body>
+</html>
